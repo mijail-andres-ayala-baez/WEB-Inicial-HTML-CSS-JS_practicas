@@ -1,0 +1,179 @@
+:root {
+    --color-fondo: #f9f9f9;
+    --blanco: #ffffff;
+    --texto-oscuro: #333333;
+    --texto-gris: #666666;
+    --azul-pastel: #eaf1fb;
+    --verde-pastel: #e9fafc;
+    --lila-pastel: #f3ebfc;
+    --gris-claro: #f4f4f4;
+    --boton-azul: #6074f9;
+    --naranja-pastel: #fdf3e7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--texto-oscuro);
+}
+
+.contenedor-app {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* ---------- Barra lateral ---------- */
+.barra-lateral {
+    width: 250px;
+    background-color: var(--blanco);
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+    overflow-y: auto;
+}
+.logo h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.boton-nuevo {
+    background-color: var(--boton-azul);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.boton-nuevo:hover {
+    background-color: #4d62e0;
+}
+.titulo-seccion {
+    color: var(--texto-gris);
+    font-size: 13px;
+    margin-top:25px;
+    margin-bottom: 10px;
+}
+.lista-menu {
+    list-style: none;
+}
+.lista-menu li {
+    padding: 8px 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.contador {
+    color: var(--texto-gris);
+    background-color: var(--gris-claro);
+    border-radius: 10px;
+    padding: 0 8px;
+}
+
+/* ---------- Contenido principal ---------- */
+.contenido-principal {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.saludo h1 {
+    font-size: 24px;
+}
+.saludo p {
+    color: var(--texto-gris);
+    font-size: 14px;
+}
+.buscador input {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+/* ---------- Tarjetas de resumen ---------- */
+.tarjeta-resumen {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+.tarjeta {
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.tarjeta p {
+    font-size: 14px;
+}
+
+.tarjeta h3 {
+    align-self: flex-end;
+    font-size: 24px;
+}
+.tarjeta-azul { background-color: var(--azul-pastel); }
+.tarjeta-verde { background-color: var(--verde-pastel); }
+.tarjeta-lila { background-color: var(--lila-pastel); }
+.tarjeta-gris { background-color: var(--gris-claro); }
+
+/* ---------- Sección de listas ---------- */
+.seccion-listas h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.categoria-caja {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.caja-trabajo {
+    background-color: var(--azul-pastel);
+}
+.caja-personal {
+    background-color: var(--verde-pastel);
+}
+.caja-estudios {
+    background-color: var(--naranja-pastel);
+}
+.caja-viajes {
+    background-color: var(--lila-pastel);
+}
+.cabecera-caja {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.flecha {
+    font-size: 12px;
+    color: var(--texto-gris);
+}
+.contenido-tareas ul {
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.contenido-tareas li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-left: 3px solid var(--boton-azul);
+    padding-left: 10px;
+}
+
+.oculto {
+    display:none;
+}

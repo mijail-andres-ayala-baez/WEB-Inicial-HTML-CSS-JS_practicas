@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lista De Tareas</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="contenedor-app">
+            <!--Barra lateral izquierda-->
+            <div class="barra-lateral">
+                <div class="logo">
+                    <h2>Tareas</h2>
+                </div>
+                <button class="boton-nuevo" id="botonNuevaTarea">+ Nueva Tarea</button>
+
+                <ul class="lista-menu">
+                        <li>Hoy <span class="contador" id="contadorHoy">5</span></li>
+                        <li>Próximos <span class="contador">3</span></li>
+                        <li>Completadas <span class="contador">12</span></li>
+                </ul>
+
+                <p class="titulo-seccion">Categorias</p>
+                <ul class="lista-menu">
+                    <li>Trabajo <span class="contador">4</span></li>
+                    <li>Personal <span class="contador">3</span></li>
+                    <li>Estudios <span class="contador">2</span></li>
+                    <li>Viajes <span class="contador">1</span></li>
+                </ul>
+            </div>
+            <!--Contenido Central-->
+            <div class="contenido-principal">
+                <div class="cabecera">
+                    <div class="saludo">
+                        <h1>Buenos días</h1>
+                        <p>Organiza tu día, un paso a la vez</p>
+                    </div>
+                    <div class="buscador">
+                        <input type="text" id="buscador" placeholder="Buscar tareas...">
+                    </div>
+                </div>
+            
+
+                <!--Tarjetas de colores superior-->
+                <div class="tarjeta-resumen">
+                    <div class="tarjeta tarjeta-azul">
+                        <p>Hoy</p>
+                        <h3 id="totalHoy">5</h3>
+                    </div>
+                    <div class="tarjeta tarjeta-verde">
+                        <p>Próximos</p>
+                        <h3>3</h3>
+                    </div>
+                    <div class="tarjeta tarjeta-lila">
+                        <p>Completadas</p>
+                        <h3>12</h3>
+                    </div>
+                    <div class="tarjeta tarjeta-gris">
+                        <p>Total</p>
+                        <h3 id="totalTareas">20</h3>
+                    </div>
+                </div>
+
+            <!--Listas de tareas-->
+                <div class="seccion-listas">
+                    <h2>Mis Listas</h2>
+
+                        <!--Lista de trabajo-->
+                        <div class="categoria-caja caja-trabajo">
+                            <div class="cabecera-caja">
+                                <h4>Trabajo</h4>
+                                <span class="flecha">▲</span>
+                            </div>
+                            <div class="contenido-tareas">
+                                <ul id="listaTrabajo">
+                                    <li>Renunión Sábado</li>
+                                    <li>Presentación Proyecto</li>
+                                    <li>Documentación</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--Lista Personal-->
+                        <div class="categoria-caja caja-personal">
+                            <div class="cabecera-caja">
+                                <h4>Personal</h4>
+                                <span class="flecha">▲</span>
+                            </div>
+                            <div class="contenido-tareas">
+                                <ul>
+                                    <li>Ir al gimnasio</li>
+                                    <li>Comprar víveres</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="categoria-caja caja-estudios">
+                            <div class="cabecera-caja">
+                                <h4>Estudios</h4>
+                                <span class="flecha">▲</span>
+                            </div>
+                            <div class="contenido-tareas">
+                                <ul>
+                                    <li>Estudiar para el examen</li>
+                                    <li>Hacer tarea de matemáticas</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="categoria-caja caja-viajes">
+                            <div class="cabecera-caja">
+                                <h4>Viajes</h4>
+                                <span class="flecha">▲</span>
+                            </div>
+                            <div class="contenido-tareas">
+                                <ul>
+                                    <li>Reservar hotel</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
